@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CManager.Controller\CManager.Controller.csproj" />
+    <ProjectReference Include="..\CManager.Repository\CManager.Repository.Json.csproj" />
+    <ProjectReference Include="..\CManager.Service\CManager.Service.csproj" />
+  </ItemGroup>
+
 </Project>

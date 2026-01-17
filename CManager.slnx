@@ -10,7 +10,7 @@
     <Project Path="CManager.Service/CManager.Service.csproj" Id="b60536cf-f120-4789-a8fb-bad09b2b3b5d" />
   </Folder>
   <Folder Name="/3 Repository/">
-    <Project Path="CManager.Repository/CManager.Repository.csproj" Id="3e0548a2-5728-479a-9bc2-ae71292989cc" />
+    <Project Path="CManager.Repository/CManager.Repository.Json.csproj" Id="3e0548a2-5728-479a-9bc2-ae71292989cc" />
   </Folder>
   <Folder Name="/Solution Files/">
     <File Path="ToDo.md" />

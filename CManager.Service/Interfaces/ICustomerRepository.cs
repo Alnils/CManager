@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CManager.Service.Interfaces
 {
-    internal interface ICustomerRepository
+    public interface ICustomerRepository
     {
         void AddCustomer(Customer customer);
     }
