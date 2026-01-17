@@ -4,16 +4,6 @@
 
 /Ditt projekt ska vara döpt till CManager.Presentation.ConsoleApp.
 
-Du måste göra en Repository som har följande funktionalitet:
-	Det ska gå att spara en lista av kunder till en fil, filen ska vara i json-format.
-	Det ska gå att hämta upp kunder från en fil, det ska sedan läggas in i en lista.
-
-Du måste göra en Service som har följande funktionalitet: (Bussiness Logic)
-	Det ska gå att skapa en ny kund och ett unikt id för kunden genom att att använda GUID. 
-	Det ska gå att hämta alla kunder från listan.
-	Det ska gå att hämta en specifik kund från listan.
-	Det ska gå att ta bort en specifik kund från listan.
-
 Du måste göra en Controller som har följande funktionalitet:
 Det ska visas en meny med menyalternativen som specificeras här nedan,
 observera att meny ska loopas så när man är klar med ett av menyalternativen
@@ -25,6 +15,17 @@ så ska man alltid komma tillbaka till menyn som har följande alternativ:
 		fullständigt namn, Id, telefonnummer, e-postadress, adressinformation (gatuadress, postnummer och ort).
 	Ta bort en specifik kund: ska visa en dialog där man får ta bort en kund baserat på e-postadressen.
 		Meddelande om att kunden har blivit borttagen ska visas.
+
+Du måste göra en Service som har följande funktionalitet: (Bussiness Logic)
+	Det ska gå att skapa en ny kund och ett unikt id för kunden genom att att använda GUID. 
+	Det ska gå att hämta alla kunder från listan.
+	Det ska gå att hämta en specifik kund från listan.
+	Det ska gå att ta bort en specifik kund från listan.
+
+
+Du måste göra en Repository som har följande funktionalitet:
+	Det ska gå att spara en lista av kunder till en fil, filen ska vara i json-format.
+	Det ska gå att hämta upp kunder från en fil, det ska sedan läggas in i en lista.
 
 Du måste se till att du tillämpar minst en av vägledningsprinciperna i SOLID.
 

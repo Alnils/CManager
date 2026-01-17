@@ -6,6 +6,7 @@
     <Project Path="CManager.Controller/CManager.Controller.csproj" Id="a6bbeb17-cde0-4d7a-9d0a-6eb6ed3fc0dd" />
   </Folder>
   <Folder Name="/2 Service/">
+    <Project Path="CManager.Service.Tests/CManager.Service.Tests.csproj" Id="1a18e777-2794-4811-96a7-490c9e403bfb" />
     <Project Path="CManager.Service/CManager.Service.csproj" Id="b60536cf-f120-4789-a8fb-bad09b2b3b5d" />
   </Folder>
   <Folder Name="/3 Repository/">
