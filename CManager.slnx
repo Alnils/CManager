@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/Solution Files/">
+    <File Path="ToDo.md" />
+  </Folder>
+  <Project Path="CManager.Presentation.ConsoleApp/CManager.Presentation.ConsoleApp.csproj" />
+</Solution>
