@@ -1,10 +1,10 @@
-﻿using CManager.Service.Interfaces;
-using CManager.Service.Models;
+﻿using CManager.Application.Interfaces;
+using CManager.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CManager.Service.Services
+namespace CManager.Application.Services
 {
     internal class CustomerService : ICustomerService
     {

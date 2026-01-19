@@ -1,9 +1,9 @@
-﻿using CManager.Service.Models;
+﻿using CManager.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CManager.Service.Interfaces
+namespace CManager.Application.Interfaces
 {
     public interface ICustomerService
     {

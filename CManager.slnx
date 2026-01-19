@@ -1,18 +1,18 @@
 <Solution>
-  <Folder Name="/0 Presentation/">
+  <Folder Name="/0 Solution Files/">
+    <File Path="ToDo.md" />
+  </Folder>
+  <Folder Name="/1 Presentation/">
     <Project Path="CManager.Presentation.ConsoleApp/CManager.Presentation.ConsoleApp.csproj" />
   </Folder>
-  <Folder Name="/1 Controller/">
-    <Project Path="CManager.Controller/CManager.Controller.csproj" Id="a6bbeb17-cde0-4d7a-9d0a-6eb6ed3fc0dd" />
+  <Folder Name="/2 Application/">
+    <Project Path="CManager.Application/CManager.Application.csproj" />
   </Folder>
-  <Folder Name="/2 Service/">
-    <Project Path="CManager.Service.Tests/CManager.Service.Tests.csproj" Id="1a18e777-2794-4811-96a7-490c9e403bfb" />
-    <Project Path="CManager.Service/CManager.Service.csproj" Id="b60536cf-f120-4789-a8fb-bad09b2b3b5d" />
+  <Folder Name="/3 Domain/">
+    <Project Path="CManager.Domain.Tests/CManager.Domain.Tests.csproj" />
+    <Project Path="CManager.Domain/CManager.Domain.csproj" />
   </Folder>
-  <Folder Name="/3 Repository/">
-    <Project Path="CManager.Repository/CManager.Repository.Json.csproj" Id="3e0548a2-5728-479a-9bc2-ae71292989cc" />
-  </Folder>
-  <Folder Name="/Solution Files/">
-    <File Path="ToDo.md" />
+  <Folder Name="/4 Infrastructure/">
+    <Project Path="CManager.Infrastructure/CManager.Infrastructure.csproj" />
   </Folder>
 </Solution>

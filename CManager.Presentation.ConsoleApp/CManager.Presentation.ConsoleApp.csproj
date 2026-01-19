@@ -8,9 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CManager.Controller\CManager.Controller.csproj" />
-    <ProjectReference Include="..\CManager.Repository\CManager.Repository.Json.csproj" />
-    <ProjectReference Include="..\CManager.Service\CManager.Service.csproj" />
+    <ProjectReference Include="..\CManager.Application\CManager.Application.csproj" />
+    <ProjectReference Include="..\CManager.Infrastructure\CManager.Infrastructure.csproj" />
+    <ProjectReference Include="..\CManager.Domain\CManager.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

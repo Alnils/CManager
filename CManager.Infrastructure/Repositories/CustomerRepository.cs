@@ -1,11 +1,11 @@
-﻿using CManager.Service.Interfaces;
-using CManager.Service.Models;
+﻿using CManager.Application.Interfaces;
+using CManager.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.Json;
 
-namespace CManager.Repository.Json.Repositories
+namespace CManager.Infrastructure
 {
     internal class CustomerRepository : ICustomerRepository
     {

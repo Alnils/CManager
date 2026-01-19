@@ -1,4 +1,4 @@
-﻿namespace CManager.Service.Models
+﻿namespace CManager.Domain.Models
 {
     public class Adress
     {

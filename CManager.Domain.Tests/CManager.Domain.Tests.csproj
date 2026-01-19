@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CManager.Service\CManager.Service.csproj" />
+    <ProjectReference Include="..\CManager.Domain\CManager.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
