@@ -1,7 +1,7 @@
 ﻿namespace CManager.Domain.Models;
 
-public class CustomerResult
+public class CustomerResult(bool success, string message)
 {
-    public bool IsSuccess { get; set; }
-    public string? Message { get; set; }
+    public bool IsSuccess { get; set; } = success;
+    public string? Message { get; set; } = message;
 }
