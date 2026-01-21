@@ -1,6 +1,7 @@
 ﻿namespace CManager.Domain.Models;
 
-public sealed class CustomerResult : ResponseResult
+public class CustomerResult
 {
-    CustomerResult _result = new CustomerResult();
+    public bool IsSuccess { get; set; }
+    public string? Message { get; set; }
 }

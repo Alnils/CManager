@@ -5,6 +5,7 @@ using System.Text;
 
 namespace CManager.Domain.Models;
 
-public sealed class CustomerObjectResult<T> : ResponseObjectResult<T>
+public sealed class CustomerObjectResult<T> : CustomerResult
 {
+    public T? Result { get; set; }
 }
