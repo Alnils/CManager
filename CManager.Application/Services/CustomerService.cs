@@ -6,7 +6,7 @@ using System.Text;
 
 namespace CManager.Application.Services
 {
-    internal class CustomerService : ICustomerService
+    public class CustomerService : ICustomerService
     {
         private readonly ICustomerRepository _customerRepository;
 

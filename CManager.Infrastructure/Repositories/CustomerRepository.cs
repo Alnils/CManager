@@ -7,7 +7,7 @@ using System.Text.Json;
 
 namespace CManager.Infrastructure
 {
-    internal class CustomerRepository : ICustomerRepository
+    public class CustomerRepository : ICustomerRepository
     {
         public void AddCustomer(Customer customer)
         {
