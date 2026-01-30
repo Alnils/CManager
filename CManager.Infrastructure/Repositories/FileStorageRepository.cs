@@ -36,7 +36,7 @@ namespace CManager.Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public CustomerObjectResult<IEnumerable<Customer>> Get(Func<Customer, bool> predicate)
+        public CustomerObjectResult<IEnumerable<Customer>> GetAll(Func<Customer, bool> predicate)
         {
             try
             {
@@ -57,12 +57,32 @@ namespace CManager.Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
+        public CustomerObjectResult<IEnumerable<Customer>> GetAll()
+        {
+            return new CustomerObjectResult<IEnumerable<Customer>>(true, "", []);
+        }
+
         public CustomerObjectResult<Customer> GetByEmail(string id)
         {
             throw new NotImplementedException();
         }
 
         public CustomerObjectResult<Customer> GetById(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public CustomerObjectResult<Customer> Get(Func<Customer, bool> predicate)
+        {
+            throw new NotImplementedException();
+        }
+
+        public CustomerResult Update(Customer request)
+        {
+            throw new NotImplementedException();
+        }
+
+        public CustomerResult Delete(string id)
         {
             throw new NotImplementedException();
         }

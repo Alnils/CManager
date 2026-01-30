@@ -10,12 +10,19 @@ namespace CManager.Application.Services
 {
     public class CustomerService : ICustomerService
     {
-
+        private List<Customer> _customerList = [];
         private readonly ICustomerRepository _customerRepository;
 
         public CustomerService(ICustomerRepository customerRepository)
         {
             _customerRepository = customerRepository;
+            LoadCustomers();
+        }
+
+        public void LoadCustomers()
+        {
+            var customerResult = _customerRepository.GetAll();
+            _customerList = customerResult.Result?.ToList() ?? [];
         }
 
         public CustomerResult Add(CreateCustomerRequest request)
@@ -44,14 +51,24 @@ namespace CManager.Application.Services
 
             Customer customer = CustomerFactory.Create(request);
 
-            var repositoryResult = _customerRepository.Add(customer);
+            var repositoryResult = _customerRepository.Add(_customerList);
             return repositoryResult;
+        }
+
+        public CustomerResult Delete(string id)
+        {
+            throw new NotImplementedException();
         }
 
         public CustomerObjectResult<Customer> Get(Func<Customer, bool> predicate)
         {
             var repositoryObjectResult = _customerRepository.Get(predicate);
             return repositoryObjectResult;
+        }
+
+        public CustomerObjectResult<IEnumerable<Customer>> GetAll()
+        {
+            throw new NotImplementedException();
         }
 
         public CustomerObjectResult<Customer> GetByEmail(string email)
@@ -68,6 +85,16 @@ namespace CManager.Application.Services
             //To use with predicate
             //_customerRepository.Get(c => c.Id == id);
             return repositoryObjectResult;
+        }
+
+        public CustomerResult Update(Customer request)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Exists(Func<Customer, bool> predicate)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -5,13 +5,13 @@ using System.Text;
 
 namespace CManager.Application.Interfaces
 {
-    public interface ICustomerRepository : 
+    public interface ICustomerRepository :
         IAdd<IEnumerable<Customer>, CustomerResult>,
-        IGet<IEnumerable<Customer>, CustomerObjectResult<Customer>>,
+        IGet<Customer, CustomerObjectResult<Customer>>,
         IGetById<string, CustomerObjectResult<Customer>>,
         IGetByEmail<string, CustomerObjectResult<Customer>>,
-        IExists<Customer, bool>
-    {
-
-    }
+        IGetAll<CustomerObjectResult<IEnumerable<Customer>>>,
+        IExists<Customer, bool>,
+        IUpdate<Customer, CustomerResult>,
+        IDelete<string, CustomerResult>;
 }
