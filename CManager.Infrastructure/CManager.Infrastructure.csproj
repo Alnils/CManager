@@ -11,8 +11,4 @@
     <ProjectReference Include="..\CManager.Domain\CManager.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Serialization\" />
-  </ItemGroup>
-
 </Project>

@@ -10,5 +10,11 @@ namespace CManager.Application.Validator
         {
             return !string.IsNullOrWhiteSpace(name) && name.Trim().Length >= minLenght;
         }
+
+        public static bool IsNotValid(string name, int minLenght = 2)
+        {
+            return !IsValid(name, minLenght);
+        }
     }
 }
+

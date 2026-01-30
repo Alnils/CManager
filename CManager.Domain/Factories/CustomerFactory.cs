@@ -21,11 +21,9 @@ public class CustomerFactory
             throw new DomainException("Email is required");
 
 
-        string id = Guid.NewGuid().ToString();
-
         return new Customer
         {
-            Id = Guid.Parse(id),
+            Id = Guid.NewGuid(),
             FirstName = request.FirstName.Trim(),
             LastName = request.LastName.Trim(),
             Email = request.Email.Trim(),

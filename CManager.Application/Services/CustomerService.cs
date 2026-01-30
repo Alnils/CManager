@@ -20,24 +20,24 @@ namespace CManager.Application.Services
 
         public CustomerResult Add(CreateCustomerRequest request)
         {
-            if (NameValidator.IsValid(request.FirstName) == false)
+            if (NameValidator.IsNotValid(request.FirstName))
             {
                 return new CustomerResult(false, "Invalid first name");
             }
-            if (NameValidator.IsValid(request.LastName) == false)
+            if (!NameValidator.IsValid(request.LastName))
             {
                 return new CustomerResult(false, "Invalid last name");
             }
-            if (EmailValidator.IsValid(request.Email) == false)
+            if (!EmailValidator.IsValid(request.Email))
             {
                 return new CustomerResult(false, "Invalid email");
             }
-            if (PhoneValidator.IsValid(request.Phone) == false)
+            if (!PhoneValidator.IsValid(request.Phone))
             {
                 return new CustomerResult(false, "Invalid phone");
             }
 
-            //why does this not work?
+            
             if (_customerRepository.Exists(c => c.Email == request.Email))
             return new CustomerResult(false, "Email already in use");
 

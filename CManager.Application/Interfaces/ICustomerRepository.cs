@@ -6,8 +6,8 @@ using System.Text;
 namespace CManager.Application.Interfaces
 {
     public interface ICustomerRepository : 
-        IAdd<Customer, CustomerResult>,
-        IGet<Customer, CustomerObjectResult<Customer>>,
+        IAdd<IEnumerable<Customer>, CustomerResult>,
+        IGet<IEnumerable<Customer>, CustomerObjectResult<Customer>>,
         IGetById<string, CustomerObjectResult<Customer>>,
         IGetByEmail<string, CustomerObjectResult<Customer>>,
         IExists<Customer, bool>
