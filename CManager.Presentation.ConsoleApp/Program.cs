@@ -1,13 +1,20 @@
-﻿var repository = new CManager.Repository.Json.DependenciesInjection().GetCustomerRepository();
-var service = new CManager.Service.DependenciesInjection().GetCustomerService(repository);
-var controller = new CManager.Controller.DependenciesInjection().GetCustomerController(service);
+﻿using CManager.Application.Interfaces;
+using CManager.Application.Services;
+using CManager.Infrastructure.Repositories;
+using CManager.Presentation.ConsoleApp.Controllers;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
-controller.CreateCustomer(
-    "John",
-    "Deer",
-    "john.deer@mail.com",
-    "1234567890",
-    "123 Main St",
-    "12345",
-    "Anytown"
-    );
+var builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddSingleton<MenuController>();
+
+builder.Services.AddSingleton<ICustomerRepository>(new FileStorageRepository(@"c:\data\CManager\customers.json"));
+builder.Services.AddSingleton<ICustomerService, CustomerService>();
+builder.Services.AddSingleton<MenuController>();
+
+var app = builder.Build();
+
+var controller = app.Services.GetRequiredService<MenuController>();
+
+controller.Run();
+
